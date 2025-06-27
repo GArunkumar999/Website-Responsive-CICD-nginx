@@ -14,5 +14,10 @@ pipeline{
             }
             
         }
+        stage('copy files to html directory'){
+            steps{
+                sh 'cp -r * /var/www/html/'
+            }
+        }
     }
 }
